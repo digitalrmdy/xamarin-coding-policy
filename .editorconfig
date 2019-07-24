@@ -72,8 +72,10 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities = *
 dotnet_naming_symbols.constant_fields.required_modifiers = const
 
 # Use upper case for constant fields
-dotnet_naming_rule.static_readonly_fields_should_be_upper_case.severity = warning
+dotnet_naming_rule.static_readonly_fields_should_be_upper_case.severity = suggestion
 dotnet_naming_rule.static_readonly_fields_should_be_upper_case.symbols = static_readonly_fields
+
+# Change this to pascal_case_style for Xamarin.Forms projects
 dotnet_naming_rule.static_readonly_fields_should_be_upper_case.style = uppercase_style
 dotnet_naming_symbols.static_readonly_fields.applicable_kinds = field
 dotnet_naming_symbols.static_readonly_fields.applicable_accessibilities = public
